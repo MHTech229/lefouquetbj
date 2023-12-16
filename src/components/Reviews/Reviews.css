@@ -1,0 +1,171 @@
+.reviews-carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: auto;
+}
+
+#reviews-carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    width: 100%;
+    height: auto;
+    max-width: 850px;
+    position: relative;
+    padding: 3rem 0;
+}
+
+#reviews-carousel .owl-dots{
+    display: none;
+}
+#reviews-carousel .owl-nav{
+    display: none;
+}
+
+.owl-carousel.owl-drag .owl-item{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+}
+
+#reviews-carousel .reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    width: 400px !important;
+    height: auto;
+    padding: 1rem 1.5rem;
+    background: var(--color-white);
+}
+
+
+#reviews-carousel .reviews .client{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+}
+
+#reviews-carousel .reviews .client .name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    font-family: Abibas;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#reviews-carousel .reviews .client .photo{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    overflow: hidden;
+}
+
+#reviews-carousel .reviews .client .photo img{
+    width: 100%;
+    height: auto;
+}
+
+#reviews-carousel .reviews .text{
+    font-size: 13px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+    height: auto;
+}
+
+#reviews-carousel .reviews .stars{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    gap: 3px;
+    width: 100%;
+    height: auto;
+}
+
+#reviews-carousel .reviews .stars span{
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px #000;
+}
+
+@media screen and (max-width: 568px){
+    .reviews-carousel-container{
+        width: 100%;
+        height: auto;
+    } 
+}
+
+@media screen and (max-width: 468px){
+    #reviews-carousel{
+        max-width: none;
+        padding: 0;
+    }
+
+    #reviews-carousel .reviews{
+        width: 300px !important;
+        height: auto;
+        padding: 0.75rem 1rem!important;
+    }
+
+    #reviews-carousel .reviews .client{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #reviews-carousel .reviews .client .photo{
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #reviews-carousel .reviews .stars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 368px){
+    #reviews-carousel .reviews{
+        width: 100% !important;
+        height: auto;
+    }
+    #reviews-carousel .reviews .text{
+        text-align: center;
+    }
+}

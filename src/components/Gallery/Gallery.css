@@ -1,0 +1,37 @@
+.gallery-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.gallery-container >  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.gallery-container .slideshow-wrapper{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+}
+
+.gallery-container .slideshow-wrapper img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: auto;
+}
+
+#lightboxContainer > section button svg{
+    color: #fff !important;
+}
