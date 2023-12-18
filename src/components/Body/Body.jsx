@@ -3,6 +3,8 @@ import {RestauImgs} from "../../Data/data"
 import Contact from "../Contact/Contact";
 import Gallery from "../Gallery/Gallery";
 import Reviews from "../Reviews/Reviews";
+import  { motion } from 'framer-motion';
+
 
 import "./Body.css";
 const Body = () => {
@@ -15,20 +17,87 @@ const Body = () => {
           <div className="main-container">
             <div className="images-container">
               <div className="col1">
-                <div className="img"> 
+                <motion.div className="img" 
+                  initial={{
+                    scale: 0,
+                    opacity: 0
+                  }}
+                  animate={{
+                    scale: 1,
+                    opacity: 1
+                  }}
+                  exit={{
+                    scale: 1,
+                    opacity: 1
+                  }}
+                  transition={{
+                      duration: 2,
+                  }}
+                > 
                   <img src={RestauImgs[0]} alt="" />
-                </div>
-                <div className="img"> 
+                </motion.div>
+                <motion.div className="img"
+                  initial={{
+                    scale: 0,
+                    opacity: 0
+                  }}
+                  animate={{
+                    scale: 1,
+                    opacity: 1
+                  }}
+                  exit={{
+                    scale: 1,
+                    opacity: 1
+                  }}
+                  transition={{
+                      duration: 2,
+                      delay: 3
+                  }}
+                > 
                   <img src={RestauImgs[1]} alt="" />
-                </div>
+                </motion.div>
               </div>
               <div className="col2">
-                <div className="img"> 
+                <motion.div className="img" 
+                  initial={{
+                    scale: 0,
+                    opacity: 0
+                  }}
+                  animate={{
+                    scale: 1,
+                    opacity: 1
+                  }}
+                  exit={{
+                    scale: 1,
+                    opacity: 1
+                  }}
+                  transition={{
+                      duration: 2,
+                      delay: 1
+                  }}
+                > 
                   <img src={RestauImgs[2]} alt="" />
-                </div>
-                <div className="img"> 
+                </motion.div>
+                <motion.div className="img"
+                  initial={{
+                    scale: 0,
+                    opacity: 0
+                  }}
+                  animate={{
+                    scale: 1,
+                    opacity: 1
+                  }}
+                  exit={{
+                    scale: 1,
+                    opacity: 1
+                  }}
+                  transition={{
+                      duration: 2,
+                      delay: 2
+                  }}
+                > 
                   <img src={RestauImgs[3]} alt="" />
-                </div>
+                </motion.div>
               </div>
             </div>
             <div className="text-container">
